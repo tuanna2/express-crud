@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Index</title>
+    <link href="display.css" rel="stylesheet">
+</head>
+<body>
+    <button class="add" onclick="location.href='add'">ADD</button>
+    <table class="table">
+        <tr>
+            <th>STT</th>
+            <th>ID</th>
+            <th>NAME</th>
+            <th>AGE</th>
+            <th>ACTION</th>
+        </tr>
+        <%for(var i=0;i<results.length;i++){%>
+        <tr>
+            <td><%-i+1%></td>
+            <td><%-results[i].id%></td>
+            <td><%-results[i].name%></td>
+            <td><%-results[i].age%></td>
+            <td>
+                <a href="/update/<%-results[i].id%>">UPDATE</a>
+                <a onclick="return confirm('Are you sure?')" href="/delete/<%-results[i].id%>">DELETE</a>
+                <a href="/detail/<%-results[i].id%>">DETAIL</a>
+            </td>
+        </tr>
+        <%}%>
+    </table>
+    <button class= "add" onclick="location.href='logout'">LOG OUT</button>
+</body>
+</html>

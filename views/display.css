@@ -1,0 +1,100 @@
+body{
+    margin:0;
+}
+.add{
+    border: 1px solid #FFEB3B;
+    border-radius: 15%;
+    padding: 11px;
+    background: rgba(0, 128, 0, 0.58);
+    color: rgb(255, 235, 0);
+    font-size: 20px;
+    margin-left: 33px;
+    margin-top: 22px;
+}
+.container{
+    margin: 0 auto;
+    width: 1170px;
+}
+#button{
+    display:inline;
+    margin:0;
+}
+.border{
+    border: 1px solid rgba(3, 169, 244, 0.48);
+    border-radius: 6px;
+    margin-left:10px;
+    padding: 10px 123px 10px 0;
+}
+a:link{
+    text-decoration: none;
+    margin-left:10px;
+}
+.table,th,td {
+    border: 1px solid;
+    border-collapse: collapse;
+    margin: 35px;
+    padding: 20px 80px;
+    
+}
+tr:nth-child(2n-1) {
+    background-color: #dddddd;
+    }
+th{
+    background-color: indianred;
+}
+.form{
+    width:100%;
+    background-image:url('bg.jpg');
+    text-align: center;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    padding: 20px;
+    
+}
+.container-form{
+    width:30%;
+    margin:0 auto;
+    border-radius: 10px;
+    border:1px solid white;
+}
+.text{
+    font-size: 30px;
+    color: white;
+    font-family: Poppins-Medium;
+}
+.ahihi{
+    padding: 19px 20% 4px 3px;  
+    background: transparent;
+    border: none;
+    color: #fff;
+    border-bottom: 1px solid white;
+    outline: none;
+}
+.button{
+    margin: 30px;
+    font-family: Poppins-Medium;
+    background-color: white;
+    font-size: 17px;
+    padding: 11px 21px;
+    border-radius: 21px;
+    outline: none;
+    border:none;
+}
+.button:hover{
+    color:white;
+    background-color: rgba(0, 0, 0, 0.38);
+}
+.reg{
+    margin-bottom: 50px;
+    color:rgba(255, 255, 255, 0.52);
+}
+.reg a:link,.reg a:active,.reg a:visited{
+    color:rgba(255, 255, 255, 0.52)
+}
+.reg a:hover{
+    color:white;
+}
+#signup{
+    display:none;
+}

@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Detail</title>
+    <style>
+        .container{
+        margin: 0 auto;
+        width: 1170px;
+        }
+    .border{
+        border: 1px solid rgba(3, 169, 244, 0.48);
+        border-radius: 6px;
+        margin-left:10px;
+        padding: 10px 123px 10px 0;
+    }
+    .add{
+        border: 1px solid #FFEB3B;
+        border-radius: 15%;
+        padding: 11px;
+        margin-left:40%;
+        background: rgba(0, 128, 0, 0.58);
+        color: rgb(255, 235, 0);
+        font-size: 20px;
+        margin-top:5%;
+    }
+    </style>
+</head>
+<body>
+    <div class = "container">
+        <p>ID   <input class="border" value="<%-results[0].id%>" type="text" ></p>
+        <p>Name<input class="border" value="<%=results[0].name%>" type="text" ></p>
+        <p>Age  <input value="<%=results[0].age%>" class="border" type="text"></p>
+        <button onclick="location.href='/home'" class ="add">Back</button>
+    </div>
+</body>
+</html>
